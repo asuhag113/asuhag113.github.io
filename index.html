@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Abhijay's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>Abhijay Suhag</h1>
+								<p>Welcome to my portfolio!</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+						<article id="about">
+							<h2 class="major">Who Am I?</h2>
+							<!-- Slideshow container -->
+							
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	  <img class="first mySlides fade" src="/images/pic01.jpg" style="width:100%" height="400">
+  
+	  <img class="second mySlides fade" src="/images/pic02.jpg" style="width:100%" height="400">
+  
+	  <img class="third mySlides fade" src="/images/pic03.jpg" style="width:100%" height="400">
+  
+	 <!-- The dots/circles -->
+	 <div style="text-align:center">
+		<span class="dot" ></span>
+		<span class="dot" ></span>
+		<span class="dot"></span>
+	  </div>
+  </div>
+  <br>
+  
+ 
+							<ul class="alt">
+								<li>I am a <b>student</b> at Duke University in my fourth year studying Computer Science with a concentration in Software Systems.</li>
+								<li>I am a <b>software developer</b> with a passion for learning, innovating, and collaborating to build elegant product from the ground up.</li>
+								<li>I am a <b>human</b> who enjoys hiking, biology, astronomy, and gaming. I'm a music-lover, avid gym-goer, and can never say no to some friendly competition.</li>
+							</ul>
+						</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">What I'm Up To</h2>
+								<ul class="actions stacked">
+									<li><a class="button primary" onclick="showPresentWork()">Present</a></li>
+									<script>
+										function showPresentWork() {
+										  document.getElementById("present-work").style.display === "block" ? document.getElementById("present-work").style.display = "none" : document.getElementById("present-work").style.display = "block";
+										}
+									  </script>
+									  <section id="present-work" style="display:none; padding-top: 10px;"><ul class="alt" >
+										<li><h3>Optimem</h3><p>I am actively working to design and develop a <b>webapp</b>  that employs <b>spaced-repetition</b> in the classroom. 
+											It enables instructors to create courses and questions, organize questions into decks based on concept, week, etc, and schedule the frequency and timeline that cards are assigned to students.
+											This has involved full stack development using <b>Typescript</b>, <b>React.js</b>, <b>ChakraUI</b>, <b>Node.js</b>, and <b>Hasura</b>. It is currently deployed using <b>AWS Fargate</b>, and is being piloted in a house course at Duke University! 
+											I hope to soon have a sample course that can be used by anyone that is curious about the platform! For now, <a href="#images"><b>here</b></a> are a few wireframes I created for the site. You can also go to
+											<a href="https://staging.optimem.io" target="_blank">staging.optimem.io</a>, though you won't have a course to enroll in.
+										</p></li>
+										<li style="padding-bottom: 20px;"><h3>Teaching Assistant</h3>At the moment, I am a teaching assistant for Duke's graduate level ECE 564: <b>Mobile App Development</b> course. I'm holding biweekly office hours helping students with core programming concepts
+										and best practices in <b>Swift</b> and grading homework weekly which involves testing an app at different stages of development. Towards the second half of the semester, I will be serving as a <b>mentor</b> for teams of student, 
+									helping them stay on track for their final projects.</li>
+										<li><h3>Learning!</h3><p>I'm currently taking Computer <b>Network Architecture</b>, Computer and Information <b>Security</b>, Introduction to <b>Linear Algebra</b>, and The 4x5 View Camera.</p></li>
+									</ul></section>
+									<li><a class="button primary" onclick="showPastWork()">Past</a></li>
+									<script>
+										function showPastWork() {
+										  document.getElementById("past-work").style.display === "block" ? document.getElementById("past-work").style.display = "none" : document.getElementById("past-work").style.display = "block";
+										}
+									  </script>
+									  <section id="past-work" style="display:none; padding-top: 10px;">
+										<ul class="alt">
+										<li><h3>Perygee</h3><p>
+											Recently, I had the fortune of interning at an <b>early-stage startup</b> that focuses on providing enterprise grade <b>IoT security</b>. I worked in a close-knit team of incredibly talented people, tackling 
+											<b>all aspects</b> of their tech stack. Through my experiences here, I learned a great deal about the nature of the <b>rapid development</b> process in industry as well as the value and efficiency that 
+											<b>testing and CI</b> bring to this workflow. Listed below are some of my accomplishments at my time there:
+											<br>
+											<br>
+											• Worked with another undergraduate to develop the front-end display in <b>JavaFX</b> for a live demo presentation at the Startup Battlefield competition at TechCrunch Disrupt 2020.<br>
+											• Developed an iOS mobile app in <b>Swift</b> for live data monitoring and cloud communication with <b>GraphQL</b> backend.<br>
+											• Developed the <b>frontend</b> and <b>backend</b> of the onboarding process for Perygee's network hubs on their webapp platform<br>
+											• Developed HTTP request and Email nodes for Perygee's <b>automation</b> workflow service, allowing users to send emails through Amazon's <b>SES</b> and HTTP requests through <b>node-fetch</b><br>
+											• Collaborated with a senior dev to <b>refactor</b> and <b>redesign</b> the backend for Perygee's network hubs to allow for more <b>extensibility</b> and integration with the cloud.<br>
+											• Developed a raw packet capture service for Perygee's network hubs that captures data with <b>tshark</b> and stores the files to the user's bucket in Amazon's <b>S3</b> service<br>
+											• Increased the performance of Perygee’s service by <b>4x</b> through R&D for optimal CIDR parsing packages and tshark multithread tests with <b>node profiling</b>
+										</p></li>
+										<li><h3>Duke Code+</h3><p>
+											In Summer 2020, I applied to, and was selected for Duke's CS+ Program as part of the Avian Analytics team. The team consisted of 3 undergraduates with a graduate mentor and a member of Duke faculty as the team leader. 
+											Together, we worked to <b>research</b>, <b>deploy</b>, and <b>optimize</b> a <b>machine learning model</b> on Nvidia's Jetson Nano that was focused on recognizing and tracking bird species and logging pertinent metadata to a central repository. 
+											We conducted weekly presentations of our project's progress to professors and other undergraduates, and culminated the summer with a final open-invite presentation for anyone at Duke. The project itself was extensively documented and logged
+											into a repository on Gitlab. My contribution to the project was as follows:
+											<br>
+											<br>
+											• Converted various models to <b>TF-TRT, TRT, and TFLite</b> formats for <b>optimization</b> on the Nano as well as compatibility for <b>Google Coral Acceleration</b><br>
+											• Developed <b>testing</b> code in <b>Python</b> for visualizing and analyzing model <b>accuracy</b> and <b>efficiency</b> on the Nano<br>
+											• Developed <b>testing</b> code in <b>Python</b> for measuring the average <b>framerate</b> produced through live capture and on video using an IMX0219-77 camera and <b>OpenCV</b></p></li></ul>
+									</section>
+								</ul>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Let's Get In Touch!</h2>
+								<p>Thanks for taking the time to learn a little about me :)<br> 
+									Below are links to my Github and LinkedIn. You can also email me at <b>abhijay.suhag@duke.edu</b>!</p>
+								<ul class="icons" style="text-align: center;">
+									<li><a href="https://www.linkedin.com/in/abhijay-suhag-410605166/" target="_blank" class="fab fa-linkedin-in">
+									<li><a href="https://github.com/asuhag113" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+						
+						<!-- Images -->
+						<article id="images">
+							<div class="slideshow-container">
+
+								<!-- Full-width images with number and caption text -->
+								  <img class="fade" src="/images/optimem1.png" style="width:100%" >
+							  
+								  <img class="fade" src="/images/optimem2.png" style="width:100%" >
+							  
+								  <img class="fade" src="/images/optimem3.png" style="width:100%" >
+
+								  <img class="fade" src="/images/optimem4.png" style="width:100%" >
+							  
+								 <!-- The dots/circles -->
+								 <div style="text-align:center">
+									<span class="dot2" ></span>
+									<span class="dot2" ></span>
+									<span class="dot2"></span>
+								  </div>
+							  </div>
+						</article>
+
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" style="text-align: right; margin: 0" >
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
